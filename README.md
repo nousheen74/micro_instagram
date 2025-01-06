@@ -40,6 +40,8 @@ Before running the application, ensure you have the following installed:
    node index.js
    The server will start at http://localhost:3000.
 
+
+
 API Endpoints
 GET /users/posts
 Fetch all posts with user details.
