@@ -1,0 +1,41 @@
+//1API  GET all the posts the users.
+GET http://localhost:3000/users/posts
+
+####
+
+//2API POST API for creating a post for the user
+POST http://localhost:3000/posts
+Content-type: application/json
+
+{
+    "title": "Sixth Post",
+    "description": "This is the sixth post",
+    "user_id": 6,
+    "images": ["final.jpg", "haii.jpg"]
+}
+
+###
+// UPDATE the post of a user
+PUT http://localhost:3000/posts/3
+Content-type: application/json
+
+{
+    "title": "New Post",
+    "description": "This is the sixth post",
+    "user_id": 3,
+    "images": ["final2.jpg", "haiihello.jpg"]
+}
+
+### 
+//DELETE a post of a user
+DELETE http://localhost:3000/posts/4
+
+
+###
+//5API GET all the posts
+GET http://localhost:3000/posts
+
+
+###
+// 6API GET all the users
+GET http://localhost:3000/users
