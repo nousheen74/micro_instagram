@@ -46,6 +46,11 @@ app.get("/users/posts", async (request,response)=> {
 
 })
 
+app.get('/', (request, response) => {
+    response.send("Welcome to the API!"); // Or any other message you prefer
+});
+
+
 // Create a post for the user
 app.post('/posts', async (request, response) => {
     const { title, description, user_id, images } = request.body;
