@@ -42,8 +42,8 @@ Before running the application, ensure you have the following installed:
 
 
 
-##
-** API Endpoints ****
+###
+** API Endpoints **
 
 1. GET /users/posts
 * Description: Fetches all the posts along with user details.
@@ -112,8 +112,8 @@ Message: Deleted Successfully.
 
 
 6. GET /users
-Description: Fetch all users in the system.
-Response:
+* Description: Fetch all users in the system.
+* Response:
 [
   {
     "id": 1,
