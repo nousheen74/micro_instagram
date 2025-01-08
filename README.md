@@ -42,8 +42,7 @@ Before running the application, ensure you have the following installed:
 
 
 
-###
-** API Endpoints **
+### API Endpoints
 
 1. GET /users/posts
 * Description: Fetches all the posts along with user details.
