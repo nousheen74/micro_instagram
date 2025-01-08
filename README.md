@@ -40,8 +40,7 @@ Before running the application, ensure you have the following installed:
    node index.js
    The server will start at http://localhost:3000.
 
-
-
+##
 ### API Endpoints
 
 1. GET /users/posts
