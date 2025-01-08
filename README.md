@@ -1,4 +1,4 @@
-# Project Name
+Micro_Instagram
 
 ## Description
 
@@ -41,39 +41,87 @@ Before running the application, ensure you have the following installed:
    The server will start at http://localhost:3000.
 
 
+** API Endpoints **
 
-API Endpoints
-GET /users/posts
-Fetch all posts with user details.
+1. GET /users/posts
+* Description: Fetches all the posts along with user details.
+* Response:
+ [
+  {
+    "post_id": 1,
+    "title": "My First Post",
+    "description": "This is a description of my first post.",
+    "images": ["image1.jpg", "image2.jpg"],
+    "user_id": 1,
+    "user_name": "Ramesh",
+    "mobile_number": "1234567890",
+    "address": "Vijayawada"
+  }
+]
 
-POST /posts
-Create a new post.
-
-Request Body:
+  
+2. POST  /posts
+* Description: Create a new post for a user.
+* Request Body:
 {
   "title": "Post Title",
   "description": "Post description",
   "user_id": 1,
   "images": ["image1.jpg", "image2.jpg"]
 }
+* Response:
+Status: 200 OK
+Message: Post Created Successfully.
 
-PUT /posts/:id
-Update an existing post by ID.
 
-Request Body:
+3. PUT  /posts/:id
+* Description: Update an existing post by post ID.
+* Request Body:
 {
-  "title": "Updated Title",
+  "title": "Updated Post",
   "description": "Updated description",
   "user_id": 1,
-  "images": ["image3.jpg"]
+  "images": ["updated_image.jpg"]
 }
+* Response:
+Status: 200 OK
+Message: Post Details Updated Successfully
 
-DELETE /posts/:id
-Delete a post by ID.
 
-GET /posts
-Fetch all posts.
+4. DELETE /posts/:id
+* Description: Delete a post by ID.
+* Response:
+Status: 200 OK
+Message: Deleted Successfully.
 
-GET /users
-Fetch all users.
+
+5. GET /posts
+* Description: Fetch all posts in the system.
+* Response:
+[
+  {
+    "id": 1,
+    "title": "Sample Post",
+    "description": "Sample description",
+    "user_id": 1,
+    "images": ["image1.jpg"]
+  }
+]
+
+
+6. GET /users
+Description: Fetch all users in the system.
+Response:
+[
+  {
+    "id": 1,
+    "name": "Sam",
+    "moile_number": "2234532312",
+    "addresss": "Vijayawada,
+  
+  }
+]
+
+
+
    
