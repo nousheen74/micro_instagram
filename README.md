@@ -41,7 +41,9 @@ Before running the application, ensure you have the following installed:
    The server will start at http://localhost:3000.
 
 
-** API Endpoints **
+
+##
+** API Endpoints ****
 
 1. GET /users/posts
 * Description: Fetches all the posts along with user details.
